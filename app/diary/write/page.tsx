@@ -1,10 +1,16 @@
-export const metadata = {
-    title : "나만의 감정일기 | 마음콩", 
-    description : "오늘 하루의 감정을 기록하고 AI와 함께 분석해보세요."
-}
+'use client'
 
-export default function DiaryWritePage(){
-    return (
-        <div className="p-5">여기에 작성성</div>
-    )
+import EmotionSelector from '@/components/EmotionSelector'
+
+export default function DiaryWritePage(): JSX.Element {
+  return (
+    <main className="p-6">
+      <div className="w-full max-w-2xl py-8">
+        <DiaryInput />
+        <EmotionSelector />
+        <SubmitButton />
+        <AIResponseCard />
+      </div>
+    </main>
+  )
 }
