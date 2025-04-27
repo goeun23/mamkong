@@ -1,11 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
 import emotionReducer from './slices/emtionSlice'
 import diaryReducer from './slices/diarySlice'
+import aiReducer from './slices/aiSlice'
+import feedReducer from './slices/feedSlice'
 
 export const store = configureStore({
     reducer: {
         emotion:emotionReducer, 
-        diary:diaryReducer
+        diary:diaryReducer, 
+        ai:aiReducer, 
+        feed:feedReducer
     }
 })
 
