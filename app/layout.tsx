@@ -15,9 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ko" className="h-full">
       <body className="h-full overflow-hidden bg-gray-50 text-gray-800">
         <Providers>
-          <div className="h-full overflow-y-auto scroll-smooth">
-            {children}
-          </div>
+          <div className="h-full overflow-y-auto scroll-smooth">{children}</div>
         </Providers>
       </body>
     </html>
